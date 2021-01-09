@@ -6,7 +6,7 @@
 ## Installation : 
 > ##### step 1 : clone this repository.
 > ##### step 2 : run __*bash install.sh*__.
-> ##### step 3 : run __*take help*__ for instructions on how to use it.
+> ##### step 3 : run __*take help*__ in the terminal for instructions on how to use it.
 
 ## Uninstall :
 to uninstall take
