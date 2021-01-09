@@ -1,0 +1,83 @@
+#!/bin/bash
+
+d=$(date '+%d/%m/%Y');
+t=$(date '+%H:%M:%S');
+
+if [[ $# == 0 ]]
+then    
+    echo "try running 'take help'"
+fi
+
+if [[ $# == 1 ]]
+then 
+    if [[ $1 == "help" ]]
+    then
+        echo "usage: take [filename] [notes] [optional-arguments]
+    arguments:
+    -t      adds time at the end of the file
+    -d      adds date at the end of the file
+    -dt     adds both date and time at the end of the file
+    -a      appends given data to the file specified
+    -at     appends given data to the file specified and time at the end
+    -ad     appends given data to the file specified and date at the end
+    -adt    appends given data to the file specified and adds date and time at the end" 
+
+    elif [[ $1 != "help" ]]
+    then 
+        echo "I Need Atleat 2 Arguments. GIVEN $#"
+        echo "usage: take [filename] [notes] [optional-arguments]
+    arguments:
+    -t      adds time at the end of the file
+    -d      adds date at the end of the file
+    -dt     adds both date and time at the end of the file
+    -a      appends given data to the file specified
+    -at     appends given data to the file specified and time at the end
+    -ad     appends given data to the file specified and date at the end
+    -adt    appends given data to the file specified and adds date and time at the end"
+    echo "eg: take contact \"phone no: 1234567890\" -dt"
+    fi
+
+else
+    if [[ $3 == "-a" ]]
+    then 
+        echo "$2" >> "$1"
+    fi
+
+    if [[ $3 == "-at" ]]
+    then 
+        echo "$2 
+Time: $t" >> "$1"
+    fi
+    if [[ $3 == "-ad" ]]
+    then 
+        echo "$2 
+Date: $d" >> "$1"
+    fi
+    if [[ $3 == "-adt" ]]
+    then 
+        echo "$2 
+Time: $t
+Date: $d" >> "$1"
+    fi
+
+    if [[ $# == 2 ]]
+    then
+        echo "$2" > "$1"
+    fi  
+    if [[ $3 == "-t" ]]
+    then 
+        echo "$2 
+Time: $t" > "$1"
+    fi
+    if [[ $3 == "-d" ]]
+    then 
+        echo "$2 
+Date: $d" > "$1"
+    fi
+    if [[ $3 == "-dt" ]]
+    then 
+        echo "$2 
+Time: $t
+Date: $d" > "$1"
+    fi
+fi
