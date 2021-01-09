@@ -1,6 +1,6 @@
 # Take 
 ---
-#### **__"take"__** is a simple cli tool for taking notes on the go. (*__working perfectly on Linux__*)
+#### *__"take"__* is a simple cli tool for taking notes on the go. (*__working perfectly on Linux__*)
 ---
 
 ## Installation : 
