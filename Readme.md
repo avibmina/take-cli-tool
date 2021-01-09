@@ -1,6 +1,6 @@
 # Take 
 ---
-#### **take** is a simple cli tool for taking notes on the go. (*__working perfectly on Linux__*)
+#### **__"take"__** is a simple cli tool for taking notes on the go. (*__working perfectly on Linux__*)
 ---
 
 ## Installation : 
@@ -13,6 +13,6 @@ to uninstall take
 > *run __bash uninstall.sh__*
 ---
 
-### *Thats It, You Have Successfully Installed **take***
+### *Thats It, You Have Successfully Installed **"take"***
 ___
 
