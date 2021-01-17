@@ -8,11 +8,13 @@
 > ##### step 2 : run __*bash install.sh*__.
 > ##### step 3 : run __*take help*__ in the terminal for instructions on how to use it.
 
+
+### *Thats It, You Have Successfully Installed **"take"***
+___
+
 ## Uninstall :
 to uninstall take
 > *run __bash uninstall.sh__*
 ---
 
-### *Thats It, You Have Successfully Installed **"take"***
-___
 
